@@ -1,7 +1,8 @@
 html {
-  font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high */
-  font-family: "Courier", serif; /* this should be the rest of the output you got from Google Fonts */
-  background-color: #BF3FBB;
+  font-size: 10px;
+  font-family: "Bubblegum Sans", sans-serif;
+  background-color:  #EF51A3;
+  color: #EF9023;
 }
 
 h1 {
@@ -9,7 +10,6 @@ h1 {
   text-align: center;
   margin: 0;
   padding: 20px 0;
-  color: #00539f;
   text-shadow: 3px 3px 1px black;
 }
 
@@ -20,14 +20,30 @@ p, li {
 }
 
 body {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #ff9500;
+  width: 800px;
+  background-color: #823AC9;
   padding: 0 20px 20px 20px;
   border: 5px solid black;
 }
 
-img {
+.me {
   display: block;
   margin: 0 auto;
+  width: 600px;
+  height: 550px;
+}
+
+.row {
+ display: flex;
+}
+
+.col {
+  flex: 50%;
+}
+
+.toronto {
+  display: block;
+  margin: 0 auto;
+  width: 350px;
+  height: 250px;
 }

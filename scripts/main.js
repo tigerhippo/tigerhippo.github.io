@@ -1,34 +1,35 @@
-const myImage = document.querySelector("img");
+let welcomeMessage = document.querySelector("h2");
+let welcomeMessageButton = document.getElementById("welcome-message-button");
 
-myImage.onclick = () => {
-  const mySrc = myImage.getAttribute("src");
-  if (mySrc === "images/rickspringfield.jpeg") {
-    myImage.setAttribute("src", "images/rickspringfield2.jpeg");
+function setWelcomeMessageName() {
+  const name = prompt("Please enter your name.");
+  if (!name) {
+    setWelcomeMessageName();
   } else {
-    myImage.setAttribute("src", "images/rickspringfield.jpeg");
+    localStorage.setItem("name", name);
+    welcomeMessage.textContent = `Welcome to my personal website, ${name}!`;
   }
-};
-
-let myButton = document.querySelector("button");
-let myHeading = document.querySelector("h1");
-
-function setUserName() {
-    const myName = prompt("Please enter your name.");
-    if (!myName) {
-      setUserName();
-    } else {
-      localStorage.setItem("name", myName);
-      myHeading.textContent = `Welcome to the World of 80s Music, ${myName}`;
-    }
 }  
 
 if (!localStorage.getItem("name")) {
-    setUserName();
+  setWelcomeMessageName();
 } else {
-    const storedName = localStorage.getItem("name");
-    myHeading.textContent = `Welcome to the World of 80s Music, ${storedName}`;
+  const storedName = localStorage.getItem("name");
+  welcomeMessage.textContent = `Welcome to my personal website, ${storedName}!`;
 }
 
-myButton.onclick = () => {
-    setUserName();
-};  
+
+welcomeMessageButton.onclick = () => {
+  setWelcomeMessageName();
+}
+
+let coolFactButton = document.getElementById("cool-fact-button");
+let coolFactText = document.getElementById("cool-fact-text");
+
+function displayCoolFact() {
+ coolFactText.style.display = "block";
+}
+
+coolFactButton.onclick = () => {
+  displayCoolFact();
+}

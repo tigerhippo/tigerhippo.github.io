@@ -1,38 +1,47 @@
-<p>My cat is <strong>very</strong> grumpy.</p>
-
 <!doctype html>
 <html lang="en-US">
   <head>
     <meta charset="utf-8" />
-    <title>My test page</title>
-    <link href="http://fonts.googleapis.com/css?family=Courier" rel="stylesheet">
+    <title>My Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width" />
   </head>
   <body>
-    <h1>80s Rock and Roll</h1>
-    <img src="images/rickspringfield.jpeg" alt="The legendary 80s rock singer Rick Springfield with his electric guitar" />
-    <p>The 80s was the golden age of rock music. 
-        Some of the most famous singers and bands included Bon Jovi, Bryan Adams, Aerosmith, Pat Benatar, and Bruce Springsteen.
-        There were so many cool varieties of electric guitars of all different colors and shapes, such as Prince's Purple Rain guitar.</p>
-    <p>Some of my favorite songs from the 80s are: 
-        <ul>
-            <li>Jessie's Girl</li>
-            <li>Summer of '69</li>
-            <li>I Love Rock 'n' Roll</li>
-            <li>Faithfully</li>
-            <li>Pour Some Sugar on Me</li>
-            <li>Another One Bites the Dust</li>
-            <li>Modern Love</li>
-            <li>Hurts So Good</li>
-            <li>Your Love</li>
-            <li>Back in Black</li>
-        </ul>
-        <a href="https://recordingarts.com/80s-music-why-the-styles-and-sounds-keep-making-a-comeback/">
-          How the 80s Changed the World of Music Forever
-        </a>     
+    <h1>Megan Liu</h1>
+    <h2>Welcome to my personal website, random person!</h2>
+    <button id="welcome-message-button">Click here to personalize the welcome message!</button>
+    <img class="me" src="images/me.jpeg" alt="This is a closeup of me wearing a winter hat while standing on a soccer field"/>
+    <p>Hi there! My name’s Megan Liu. I’m a 3rd year Computer Science major at Northeastern, and I live in a town outside of Boston. 
+      I’m passionate about full stack software development, the humanities, and interdisciplinary work. I’m in a club called Northeastern 
+      Electric Racing, where I am a full stack software developer and was formerly a tech lead. In my spare time, I love learning foreign 
+      languages, reading Wikipedia articles, listening to 80s music, and hanging out with my friends. 
     </p>
-    <button>Change user</button> 
+    <p>In the future, I will include the following on my website:
+      <ul>
+        <li>A menu box on the right hand side of this home page</li>
+        <li>The menu will list the name of the home page ('Home') and also the names of many places that I have traveled to</li>
+        <li>The 'Home' name is clickable and leads back to the home page</li>
+        <li>Each place name is clickable and leads to a page dedicated solely to that place</li>
+        <li>Each place page includes:</li>
+        <ul>
+          <li>A written overview of that place</li>
+          <li>Images (my photos) of that place</li>
+          <li>Written descriptions of the images</li>
+          <li>Links to more travel info about that place</li>
+        </ul>
+      </ul>
+    </p>  
+    <button id="cool-fact-button">Click here to view a cool fact about me!</button>
+    <p id="cool-fact-text" style="display: none">I speak 7 languages to varying degrees!</p>
+    <div class="row">
+      <div class="col">
+        <img class="toronto" src="images/torontocastle.jpg" alt="This is a photo of Casa Loma, a famous stone mansion built to resemble a castle, with a water fountain in the front"/>
+      </div>
+      <div class="col">
+        <img class="toronto" src="images/torontogardenpark.jpg" alt="This is a photo of a stream running through the trees next to the walkway in the Toronto Botanical Gardens"/>
+      </div>
+    </div>
     <script src="scripts/main.js"></script>
   </body>
 </html>
